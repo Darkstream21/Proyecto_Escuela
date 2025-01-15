@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.container {
+    background-color: #030007;
+    color: #fff;
+    padding: 20px;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin: 20px;
+}
+
+.container h1 {
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.greeting {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.container p {
+    margin: 8px 0;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+/*----Codigo de la segunda página----*/
+.muestra {
+    margin-bottom: 15px;
+}
+
+input[type="text"], select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    font-size: 0.9rem;
+}
+input[type="text"] {
+    background-color: #fff;
+    color: #050000;
+}
+
+select {
+    background-color: #fff;
+    color: #070000;
+}
+.form-group label {
+    font-weight: 400;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+.time-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.time-group div {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.time-group div:last-child {
+    margin-right: 0;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #f4c52d;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #f4c52d;
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+        max-width: 280px;
+    }
+
+    .container h1 {
+        font-size: 1.3rem;
+    }
+
+    .container p {
+        font-size: 0.9rem;
+    }
+
+    input[type="text"], select {
+        font-size: 0.85rem;
+    }
+
+    button {
+        font-size: 0.85rem;
+    }
+}
+@media (min-width: 601px) {
+    .container {
+        max-width: 320px;
+    }
+
+    .container h1 {
+        font-size: 1.5rem;
+    }
+
+    .container p {
+        font-size: 1rem;
+    }
+
+    input[type="text"], select {
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+    }
+}
